@@ -1,0 +1,15 @@
+*{
+  font-family: "Raleway", sans-serif;
+}
+
+
+.whatsapp{
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+}
+.whatsapp-float{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
