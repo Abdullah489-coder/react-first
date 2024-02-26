@@ -1,41 +1,66 @@
 import React from 'react'
-import "../../pages/Home/Hero.css"
-import { Link } from 'react-router-dom'
+import "../../Pages/Home/Hero.css"
+import slider1 from "../../Component/Assets/images.jpg"
+import slider2 from "../../Component/Assets/images1.jpg"
+import img1 from "../../Component/Assets/24-hours-400x400.png"
+import img2 from "../../Component/Assets/free-400x4001.png"
+import img3 from "../../Component/Assets/certificate-400x400.png"
 function Hero() {
   return (
     <>
-    <h1 className='container text-center mt-5 col-sm-12' id='title'>Prospective of AL-NISA Quran Institute</h1>
-    <p className='container mt-4 ' id='p-title'>Welcome to AL-NISA Quran Institute the premier online Quran education academy! At  AL-NISA Quran Institute, we offer quality, engaging lessons and interactive activities to help your children learn the Holy Quran from the comfort of their own homes. We aim to provide the best understanding of Basic Quran Reading, Quran with Tajweed, Quran Memorization, Tafseer e Quran  on one platform with proficient, esteemed tutors of AL-NISA Quran Institute.We have both male & female teachers. You can choose any of them depending upon your convenience. we are providing one and one classes . We make sure that each student is supported on their journey toward mastering the Holy Quran,. Our prime focus is teaching the best readings of the Quran with the help of detailed knowledge on Tajweed, understanding of this prestigious book, and Quranic Arabic.  </p>
-    <h1 className='container text-center'id='title' > 3 Days Free Trial Classes</h1>
 
-    <div className='container '>
 
-    <div class="row row-cols-1 row-cols-md-2  g-4">
-    <div class="col-sm-10 text-center">
-    <div class="card border-0" id='p-title'>
-     
-      <div class="card-body">
-        <h2 class="card-title text-center mb-5">Take Trial Online Quran Classes</h2>
-        <p class="card-text" >As soon as you book an online trial class come & take the online class on time. Without any payment, online classes are offered to students</p>
-        <Link to="/register" className='btn btn-primary text-center'>Register Now</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-10 text-center " id='p-title'>
+
+
     
-  <div class="card border-0">
-      <div class="card-body">
-      
-        <h2 class="card-title text-center mb-3">Register in Quran Classes</h2>
-        <p class="card-text" >Get registered with our academy for proper learning after taking trial online classes. Our professionally skilled Quran Tutors are available to provide online teaching services.</p>
-        <Link to="/register" className='btn btn-primary text-center'>Register Now</Link>
+      <div className='container mt-4'>
+      <div className="card-group ">
+      <div className='col-4 mb-4'>
+        <div className="card me-3"  id='card'>
+          <img src={img2} className="card-img-top text-center " id='card-img'  alt="..." />
+          <div className="card-body">
+            <h3 className="card-title  text-center text-white mt-4">Free Trail Class</h3>
+            <p className="card-text fs-5  text-center text-white mt-3">Get free trial class for any course</p>
+          </div>
+         </div>
+        </div>
+        <div className='col-4 mb-4'>
+        <div className="card me-3" id='card' >
+        <img src={img1} className="card-img-top text-center" id='card-img'  alt="..." />
+          <div className="card-body">
+            <h3 className="card-title  text-center text-white">  Classes Around The Clock</h3>
+            <p className="card-text fs-5  text-center text-white">Take classes at any time that suit you</p>
+          </div>
+          </div>
+        </div>
+       
+        <div className='col-4 mb-4'>
+        <div className="card"  id='card'>
+          <img src={img3} className="card-img-top" id='card-img' alt="..." />
+          <div className="card-body">
+            <h3 className="card-title text-center text-white">Completion Certificates</h3>
+            <p className="card-text fs-5  text-center  text-white">Get a certificate after completing the course</p>
+          </div>
+         </div>
+        </div>
       </div>
-    </div>
-  </div>
+      </div>
 
-    </div>
-    </div>
+      <div className='container'>
+
+      </div>
     
+
+
+      <div className='container my-5 text-center'>
+<h1 className='heading my-4 fs-1'>We are providing the best quality of learning the Holy Quran</h1>
+
+  <p className='mt-3'>Welcome to Quran Institute the premier online Quran education academy! At Quran Institute, we offer quality, engaging lessons and interactive activities to help your children learn the Holy Quran from the comfort of their own homes. Our experienced and knowledgeable tutors are passionate about teaching the Quran and will customize each lesson to meet the individual needs of your child. We make sure that each student is supported on their journey toward mastering the Holy Quran, so they can benefit from its timeless teachings for many years to come. So don’t wait any longer – enroll your child in an online Quran class today with Quran Institute.</p>
+</div>
+
+
+
+
     </>
   )
 }

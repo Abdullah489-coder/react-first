@@ -1,23 +1,22 @@
 import React from 'react'
-import "../../pages/Home/Home.css"
-import Card from '../../Component/Card.js';
-import WhyChoseUs from './WhyChoseUs.js';
-import Reviews from './Reviews.js';
-import Slider from './Slider.js';
-import Regestration from './Regestration.js';
-import Footer from '../../Component/Footer.js';
-import Hero from './Hero.js';
+import Hero from './Hero'
+import Card from './Card'
+import WhyChouse from './WhyChouse'
+import Review from './Review'
+import FreeTrail from './FreeTrail'
+
+
 function Home() {
   return (
-    <div>
-  <Slider />  
-  <Hero />
-       <Card />
-       <Regestration />
-        <WhyChoseUs />
-      <Reviews />
-      <Footer />
-    </div>
+    <>
+    <Hero />
+    <Card />
+    <FreeTrail />
+    
+    <WhyChouse />
+    <Review />
+    
+    </>
   )
 }
 

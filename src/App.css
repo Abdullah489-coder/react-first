@@ -1,8 +1,10 @@
-*{
-  font-family: "Raleway", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-
 .whatsapp{
   width: 70px;
   height: 70px;

@@ -1,62 +1,279 @@
-#container-fluid{
-    background-color: #006064;
+.links{
+  text-decoration: none;
+  color: #fff;
 }
-#footer-links{
-   
+.links:hover{
+  color: #0b7c80;
 }
 ul li{
-    list-style: none;
-    text-decoration: none;
-    padding-top: 20px;
-   
-}
-#link-footer{
-    color: #fff;
-    text-decoration: none;
-    padding-top: 15px;
-}
-#link-footer:hover{
-    font-size: 20px;
-    transition: 1s;
-   
+  list-style: none;
+  padding: 10px;
 }
 
 
-/* <reset-style> ============================ */
-a {
-    text-decoration: none;
-  }
-  /* <main-style> ============================ */
-  #link-footer {
-    color: #fff;
-    line-height: 2;
-    position: relative;
-  }
+
+
+.share {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  margin-top: 60px;
+}
+
+.btn1 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn1 .tooltiptext1 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1 .tooltiptext1 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1:hover {
+  background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+  fill: white;
+}
+
+.btn2 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2 .tooltiptext2 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn2 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2 .tooltiptext2 .username {
+  font-size: 0.6em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn2:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2:hover {
+  background-color: #03A9F4;
+}
+
+.btn2:hover .twitter {
+  fill: white;
+}
+
+.btn3 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: green;
+ 
+  transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: #000;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+  width: 4em;
+  height: 4em;
+ background-color: #fff;
+}
+.whatsapp{
+  color: #0b7c80;
+}
+
+.btn3 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3 .tooltiptext3 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3:hover {
+  background-color: #0b7c80;
+}
+
+.btn3:hover .whatsapp {
+  fill: white;
+}
+
+
+
+
+
+.btn4 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+ 
+  transition: .4s all;
+}
+
+.btn4 .tooltiptext4 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: #000;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn4 .tooltiptext4 .card {
+  width: 4em;
+  height: 4em;
+ background-color: #fff;
+}
+
+.btn4 .tooltiptext4 .account {
+  margin-top: 1em;
+}
+
+.btn4 .tooltiptext4 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn4:hover .tooltiptext4 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn4:hover {
+  background-color: #2753a7;
+}
+
+.btn4:hover .facebook {
+  fill: white;
+}
+
+
+
+@media screen and (max-width: 850px) {
   
-  #link-footer::before {
-    content: '';
-    width: 0;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -.25rem;
-    left: 50%;
-    transition: width 1s, left 1s;
-  }
-  
-  #link-footer:hover::before {
-    width: 100%;
-    left: 0;
-  }
-  #link-foote{
-    color: #fff;
-  }
-  #icon{
-    color: #fff;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    padding: 10px 10px;
-    border-radius: 30px;
-  }
+.col-3{
+  width: 100%;
+}
+
+
+}
+
+

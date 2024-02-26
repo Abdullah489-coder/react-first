@@ -1,0 +1,125 @@
+.nav-link {
+    padding: 0 10px 0 10px;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .nav-link {
+    --primary-color: #111;
+    --hovered-color: #0b7c80;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .nav-link p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  
+  .nav-link::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 4px;
+    transition: 0.7s ease-out;
+    color: #0b7c80;
+  }
+  
+  .nav-link p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.7s ease-out;
+    color: #0b7c80;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link:hover p::before {
+    width: 100%;
+   
+  }
+  
+  .nav-link:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color);
+   
+  }
+  
+  .nav-link svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+   
+  }
+  .nav-link:hover{
+    transform: scaleX(1.07);
+    transition: 0.5s;
+  }
+  #btn{
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: 1px solid #0b7c80;
+    color: #17C3B2;
+    text-align: center;
+  }
+
+
+
+  #btn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+   }
+   
+   #btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #0b7c80;
+    transition: .7s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   #btn:hover::before {
+    width: 105%;
+   }
+   
+   #btn:hover {
+    color: #111;
+   }
+   
+  
